@@ -7,8 +7,9 @@
 </head>  
   
 <body style="margin : 0px; overflow: hidden;">
-    <button height="200px" onclick="this.innerHTML=Date()" id="button1">BUTTON updated</button>
     <!--
+    <button height="200px" onclick="this.innerHTML=Date()" id="button1">BUTTON updated</button>
+    -->
     <a-scene
         vr-mode-ui="enabled: false"
 		embedded
@@ -18,18 +19,17 @@
                 position="0 0 0"
                 scale="0.05 0.05 0.05"
                 gltf-model="./assets/magnemite/scene.gltf"
-                touchstart="document.getElementById('primitive').material = 'color: yellow'"
+                onclick="document.getElementById('primitive').material = 'color: yellow'"
             ></a-entity>
             <a-entity 
                 geometry="primitive: box"
                 material="color: red"
                 position="1 1 1"
                 scale="0.1 0.1 0.1"
-                touchstart="this.material='color: blue'"
+                onclick="this.material='color: blue'"
                 id="primitive"
             ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
-    -->
 </body>
