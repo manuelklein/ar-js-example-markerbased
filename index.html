@@ -17,13 +17,15 @@
                 position="0 0 0"
                 scale="0.05 0.05 0.05"
                 gltf-model="./assets/magnemite/scene.gltf"
-                touchstart="console.log('TEst')"
+                touchstart="document.getElementById('primitive').material = 'color: yellow'"
             ></a-entity>
             <a-entity 
                 geometry="primitive: box"
                 material="color: red"
                 position="1 1 1"
                 scale="0.1 0.1 0.1"
+                touchstart="this.material='color: blue'"
+                id="primitive"
             ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
