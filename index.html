@@ -19,14 +19,14 @@
                 position="0 0 0"
                 scale="0.05 0.05 0.05"
                 gltf-model="./assets/magnemite/scene.gltf"
-                onclick="document.getElementById('primitive').material = 'color: yellow'"
+                onclick=document.getElementById(primitive).material = 'color: yellow'
             ></a-entity>
             <a-entity 
                 geometry="primitive: box"
                 material="color: red"
                 position="1 1 1"
                 scale="0.1 0.1 0.1"
-                onclick="this.material='color: blue'"
+                onclick=this.material='color: blue'
                 id="primitive"
             ></a-entity>
         </a-marker>
