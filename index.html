@@ -7,7 +7,7 @@
 </head>  
   
 <body style="margin : 0px; overflow: hidden;">
-    <button height="200px" touchstart="this.innerHTML=Date()" id="button1">BUTTON</button>
+    <!-- <button height="200px" touchstart="this.innerHTML=Date()" id="button1">BUTTON</button> -->
     <a-scene
         vr-mode-ui="enabled: false"
 		embedded
@@ -17,7 +17,7 @@
                 position="0 0 0"
                 scale="0.05 0.05 0.05"
                 gltf-model="./assets/magnemite/scene.gltf"
-                touchstart="document.getElementById('button1').innerHTML=Date()"
+                touchstart="this.scale='0.1 0.1 0.1"
             ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
