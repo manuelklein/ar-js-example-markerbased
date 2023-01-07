@@ -22,14 +22,14 @@
                 position="0 0 0"
                 scale="0.05 0.05 0.05"
                 gltf-model="./assets/magnemite/scene.gltf"
-                onclick=document.getElementById(primitive).material = 'color: yellow'
+                onclick=youfunc()
             ></a-entity>
             <a-entity 
                 geometry="primitive: box"
                 material="color: red"
                 position="1 1 1"
                 scale="0.1 0.1 0.1"
-                onclick=this.material='color: blue'
+                onclick=threefunc()
                 id="primitive"
             ></a-entity>
         </a-marker>
@@ -42,5 +42,14 @@
     function myfunc() { 
         const elem = document.getElementById('button1');
         elem.innerHTML=Date();
+    }
+    function youfunc() {
+        const elem = document.getElementById(primitive);
+        elem.material = 'color: yellow';
+    }
+
+    function threefunc() {
+        const elem = document.getElementById(primitive);
+        elem.material = 'color: blue';
     }
 </script>
