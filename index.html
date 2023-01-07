@@ -24,6 +24,7 @@
                 gltf-model="./assets/magnemite/scene.gltf"
                 onclick=youfunc()
             ></a-entity>
+            <!-- a-animation attribute="rotation" begin="click" dur="500" fill="backwards" to="30 30 360"></a-animation -->
             <a-entity 
                 geometry="primitive: box"
                 material="color: red"
@@ -44,12 +45,11 @@
         elem.innerHTML=Date();
     }
     function youfunc() {
-        const elem = document.getElementById(primitive);
+        const elem = document.getElementById('primitive');
         elem.material = 'color: yellow';
     }
-
     function threefunc() {
-        const elem = document.getElementById(primitive);
+        const elem = document.getElementById('primitive');
         elem.material = 'color: blue';
     }
 </script>
